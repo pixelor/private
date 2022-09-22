@@ -1,0 +1,37 @@
+[
+    // {
+    //     "title":"备用一(124个导航站点/138个搜索站点)",
+    //     "url":"booksource/pb.txt"
+    // },{
+    //     "title":"备用二(15个导航站点/52个搜索站点)",
+    //     "url":"booksource/namofree.txt"
+    // },{
+    //     "title":"备用三(66个导航站点/121个搜索站点)",
+    //     "url":"booksource/yck115.json"
+    // },{
+    //     "title":"备用四(132个导航站点/162个搜索站点)",
+    //     "url":"booksource/hff156.json"
+    // },{
+    //     "title":"仅搜索一(1个导航站点/6个搜索站点)",
+    //     "url":"booksource/bushixuanqi.txt"
+    // },{
+    //     "title":"仅搜索二(1个导航站点/34个搜索站点)",
+    //     "url":"booksource/ftzlcb.json"
+    // },{
+    //     "title":"听书(34个导航站点/35个搜索站点)",
+    //     "url":"booksource/0222yousheng.txt"
+    // },{
+    //     "title":"漫画(153个导航站点/159个搜索站点)",
+    //     "url":"booksource/mhy-haxc.txt"
+    // },{
+    //     "title":"最全最多(249个导航站点/261个搜索站点)",
+    //     "url":"booksource/yc.json"
+    // },{
+    //     "title":"所有站点(为上述站点集合，数量较多，请耐心等待加载完成)",
+    //     "url":"booksource/all.json"
+    // },
+    {
+        "title":"默认",
+        "url":"booksource/cn.json"
+    }
+]
