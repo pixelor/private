@@ -1,5 +1,8 @@
 [
     {
+        "title":"默认(7个导航站点/25个搜索站点)",
+        "url":"booksource/default.json"
+    },{
         "title":"备用一(124个导航站点/138个搜索站点)",
         "url":"booksource/pb.txt"
     },{
