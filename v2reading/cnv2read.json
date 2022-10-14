@@ -1,8 +1,8 @@
 {
-    "versionCode":10009,
-    "versionName":"v1.0.9",
-    "forceVersionCode":10009,
-    "url":"https://v2cross.com/app/v2read_app.apk",
+    "versionCode":10200,
+    "versionName":"v1.2.0",
+    "forceVersionCode":10008,
+    "url":"https://download.fastgit.org/pixelor/reader/releases/download/1.2.0/v2read_app.apk",
     "updateTitle":"全网小说阅读器",
     "updateContent":"增加更多站点集合，让您在上千个网站看小说",
     "force":0,
