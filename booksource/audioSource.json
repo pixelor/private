@@ -1,0 +1,793 @@
+[
+  {
+    "bookSourceComment": "",
+    "bookSourceGroup": "",
+    "bookSourceName": "海盗听书",
+    "bookSourceType": 1,
+    "bookSourceUrl": "https://www.tingxiaoshuo.cc/",
+    "bookUrlPattern": "",
+    "customOrder": -2085957779,
+    "enabled": true,
+    "enabledCookieJar": false,
+    "enabledExplore": true,
+    "enabledReview": false,
+    "exploreUrl": "奇幻玄幻::https://www.tingxiaoshuo.cc/listen/apptingchina/categoryList?size=10&page={{page}}&categoryId=6\n都市言情::https://www.tingxiaoshuo.cc/listen/apptingchina/categoryList?size=10&page={{page}}&categoryId=7\n宫频女斗::https://www.tingxiaoshuo.cc/listen/apptingchina/categoryList?size=10&page={{page}}&categoryId=8\n官场商战::https://www.tingxiaoshuo.cc/listen/apptingchina/categoryList?size=10&page={{page}}&categoryId=9\n武侠仙侠::https://www.tingxiaoshuo.cc/listen/apptingchina/categoryList?size=10&page={{page}}&categoryId=10\n侦探推理::https://www.tingxiaoshuo.cc/listen/apptingchina/categoryList?size=10&page={{page}}&categoryId=11\n探险科幻::https://www.tingxiaoshuo.cc/listen/apptingchina/categoryList?size=10&page={{page}}&categoryId=12\n重生穿越::https://www.tingxiaoshuo.cc/listen/apptingchina/categoryList?size=10&page={{page}}&categoryId=13\n恐怖惊悚::https://www.tingxiaoshuo.cc/listen/apptingchina/categoryList?size=10&page={{page}}&categoryId=14\n文学历史::https://www.tingxiaoshuo.cc/listen/apptingchina/categoryList?size=10&page={{page}}&categoryId=15\n两性情感::https://www.tingxiaoshuo.cc/listen/apptingchina/categoryList?size=10&page={{page}}&categoryId=49\n网游竞技::https://www.tingxiaoshuo.cc/listen/apptingchina/categoryList?size=10&page={{page}}&categoryId=50",
+    "header": "{\"Referer\":\"https://app.tingxiaoshuo.cc\"}",
+    "lastUpdateTime": 1664205940614,
+    "loginUi": "",
+    "respondTime": 15435,
+    "ruleBookInfo": {
+      "author": "$.data.bookData.bookName&&$.data.bookData.bookAnchor",
+      "coverUrl": "$.data.bookData.bookImage",
+      "init": "",
+      "intro": "$.data.bookData.bookDesc",
+      "kind": "$.data.bookData.categoryName",
+      "lastChapter": "",
+      "name": "$.data.bookData.bookTitle",
+      "tocUrl": "https://app.tingxiaoshuo.cc/listen/apptingchina/chapter?size=50000&page=1&sort=asc&bookId={{$.data.bookData.id}}",
+      "wordCount": ""
+    },
+    "ruleContent": {
+      "content": "$.src",
+      "replaceRegex": ""
+    },
+    "ruleExplore": {
+      "author": "$.bookAnchor",
+      "bookList": "$.data.list[*]",
+      "bookUrl": "https://app.tingxiaoshuo.cc/listen/apptingchina/book?bookId={{$.id}}",
+      "coverUrl": "$.bookImage",
+      "intro": "$.bookDesc",
+      "kind": "$.bookName",
+      "name": "$.bookTitle##\\|.*",
+      "wordCount": "$.heat"
+    },
+    "ruleReview": {},
+    "ruleSearch": {
+      "author": "$.bookAnchor",
+      "bookList": "$.data.bookData[*]",
+      "bookUrl": "https://app.tingxiaoshuo.cc/listen/apptingchina/book?bookId={{$.id}}",
+      "checkKeyWord": "大奉打更人",
+      "coverUrl": "$.bookImage",
+      "intro": "$.bookDesc",
+      "kind": "$.bookName",
+      "lastChapter": "",
+      "name": "$.bookTitle",
+      "wordCount": "$.heat"
+    },
+    "ruleToc": {
+      "chapterList": "$.data.list[*]",
+      "chapterName": "$.title",
+      "chapterUrl": "https://app.tingxiaoshuo.cc/listen/apptingchina/AppGetChapterUrl2022?uid=1&chapterId={{$.chapterId}}&bookId={{$.bookId}}",
+      "isVolume": "",
+      "updateTime": "$.update_date"
+    },
+    "searchUrl": "https://www.tingxiaoshuo.cc/listen/apptingchina/appSearch?search={{key}}",
+    "weight": 0
+  },
+  {
+    "bookSourceComment": "",
+    "bookSourceGroup": "",
+    "bookSourceName": "🎧 有声听书吧(修复)",
+    "bookSourceType": 1,
+    "bookSourceUrl": "https://m.ysts8.net/",
+    "bookUrlPattern": "http://www.ysxs8.com/downlist/\\d+.html",
+    "customOrder": -136214,
+    "enabled": true,
+    "enabledCookieJar": false,
+    "enabledExplore": true,
+    "enabledReview": false,
+    "exploreUrl": "玄幻奇幻::/m_l/46_{{page}}.html\n恐怖惊悚::/m_l/14_{{page}}.html\n言情通俗::/m_l/19_{{page}}.html\n武侠小说::/m_l/11_{{page}}.html\n历史军事::/m_l/15_{{page}}.html\n刑侦反腐::/m_l/16_{{page}}.html\n官场商战::/m_l/17_{{page}}.html\n人物纪实::/m_l/18_{{page}}.html\n有声文学::/m_l/10_{{page}}.html\n童话寓言::/m_l/20_{{page}}.html\n英文读物::/m_l/22_{{page}}.html\n百家讲坛::/m_l/9_{{page}}.html\n广播剧::/m_l/36_{{page}}.html",
+    "header": "",
+    "lastUpdateTime": 1662566912996,
+    "respondTime": 17416,
+    "ruleBookInfo": {
+      "author": ".info div.0@text##播音：",
+      "coverUrl": ".bookimg@img@src",
+      "init": "",
+      "intro": ".book_intro@text",
+      "kind": ".info div.2@text##类别：",
+      "lastChapter": "",
+      "name": ".bookname@text"
+    },
+    "ruleContent": {
+      "content": "iframe@src@js:\neval(String(java.ajax(result+\",{'headers':{'Referer':'{{baseUrl}}'}}\").match(/(var u =[\\S\\s]+?)\\$/)[1]));\nx+result.match(/url=(.*?)&/)[1]+\",{'headers':{'Referer':'{{result}}'}}\"",
+      "sourceRegex": ""
+    },
+    "ruleExplore": {
+      "author": "span@text##\\s*／.*",
+      "bookList": ".top_list@a",
+      "bookUrl": "a@href",
+      "coverUrl": "",
+      "intro": "",
+      "kind": "",
+      "lastChapter": "",
+      "name": "textNodes"
+    },
+    "ruleSearch": {
+      "author": ".peo@text##／.*",
+      "bookList": ".top_list@a",
+      "bookUrl": "@href",
+      "checkKeyWord": "",
+      "coverUrl": "",
+      "intro": "",
+      "kind": "",
+      "lastChapter": "",
+      "name": "@text"
+    },
+    "ruleToc": {
+      "chapterList": "#playlist li a",
+      "chapterName": "text",
+      "chapterUrl": "href"
+    },
+    "searchUrl": "https://m.ysts8.net/so.php?keyword={{key}}",
+    "weight": 0
+  },
+  {
+    "bookSourceComment": "",
+    "bookSourceGroup": "搜索链接规则为空",
+    "bookSourceName": "小米FM🎧",
+    "bookSourceType": 1,
+    "bookSourceUrl": "https://fm.music.xiaomi.com/fm/",
+    "customOrder": -117669,
+    "enabled": true,
+    "enabledCookieJar": false,
+    "enabledExplore": true,
+    "enabledReview": false,
+    "exploreUrl": "浙江台::https://fm.music.xiaomi.com/fm/v1/category/channel/377?pageType=%2Ffm_broadcast_list/广播/交通台&version_info=%7B%22apk_version%22%3A%22230%22%2C%22apk_version_name%22%3A%221.0.230%22%2C%22device%22%3A%22platina%22%2C%22language%22%3A%22zh_CN%22%2C%22sys_verversion%22%3A%229_V10.3.7.0.PDTCNXM%22%7D&sign=95a7b18a89cb3419d1b54658f25216aec5d4df21&nonce=-5530817897123709456&i=37828e023677ad6e78e96f1c8506e8c4&oaid=56fbb3561e299e40&oaid_imei_both_have=true&ui_version=87&is_pad=false&miui_version=V10&package_name=com.miui.fm&support_fmservice=false\n\n新疆::https://fm.music.xiaomi.com/fm/v1/category/channel/400?pageType=%2Ffm_broadcast_list/广播/交通台&version_info=%7B%22apk_version%22%3A%22230%22%2C%22apk_version_name%22%3A%221.0.230%22%2C%22device%22%3A%22platina%22%2C%22language%22%3A%22zh_CN%22%2C%22sys_verversion%22%3A%229_V10.3.7.0.PDTCNXM%22%7D&sign=95a7b18a89cb3419d1b54658f25216aec5d4df21&nonce=-5530817897123709456&i=37828e023677ad6e78e96f1c8506e8c4&oaid=56fbb3561e299e40&oaid_imei_both_have=true&ui_version=87&is_pad=false&miui_version=V10&package_name=com.miui.fm&support_fmservice=false\n陕西::https://fm.music.xiaomi.com/fm/v1/category/channel/394?pageType=%2Ffm_broadcast_list/广播/交通台&version_info=%7B%22apk_version%22%3A%22230%22%2C%22apk_version_name%22%3A%221.0.230%22%2C%22device%22%3A%22platina%22%2C%22language%22%3A%22zh_CN%22%2C%22sys_verversion%22%3A%229_V10.3.7.0.PDTCNXM%22%7D&sign=95a7b18a89cb3419d1b54658f25216aec5d4df21&nonce=-5530817897123709456&i=37828e023677ad6e78e96f1c8506e8c4&oaid=56fbb3561e299e40&oaid_imei_both_have=true&ui_version=87&is_pad=false&miui_version=V10&package_name=com.miui.fm&support_fmservice=false\n四川::https://fm.music.xiaomi.com/fm/v1/category/channel/393?pageType=%2Ffm_broadcast_list/广播/交通台&version_info=%7B%22apk_version%22%3A%22230%22%2C%22apk_version_name%22%3A%221.0.230%22%2C%22device%22%3A%22platina%22%2C%22language%22%3A%22zh_CN%22%2C%22sys_verversion%22%3A%229_V10.3.7.0.PDTCNXM%22%7D&sign=95a7b18a89cb3419d1b54658f25216aec5d4df21&nonce=-5530817897123709456&i=37828e023677ad6e78e96f1c8506e8c4&oaid=56fbb3561e299e40&oaid_imei_both_have=true&ui_version=87&is_pad=false&miui_version=V10&package_name=com.miui.fm&support_fmservice=false\n云南::https://fm.music.xiaomi.com/fm/v1/category/channel/392?pageType=%2Ffm_broadcast_list/广播/交通台&version_info=%7B%22apk_version%22%3A%22230%22%2C%22apk_version_name%22%3A%221.0.230%22%2C%22device%22%3A%22platina%22%2C%22language%22%3A%22zh_CN%22%2C%22sys_verversion%22%3A%229_V10.3.7.0.PDTCNXM%22%7D&sign=95a7b18a89cb3419d1b54658f25216aec5d4df21&nonce=-5530817897123709456&i=37828e023677ad6e78e96f1c8506e8c4&oaid=56fbb3561e299e40&oaid_imei_both_have=true&ui_version=87&is_pad=false&miui_version=V10&package_name=com.miui.fm&support_fmservice=false\n重庆::https://fm.music.xiaomi.com/fm/v1/category/channel/391?pageType=%2Ffm_broadcast_list/广播/交通台&version_info=%7B%22apk_version%22%3A%22230%22%2C%22apk_version_name%22%3A%221.0.230%22%2C%22device%22%3A%22platina%22%2C%22language%22%3A%22zh_CN%22%2C%22sys_verversion%22%3A%229_V10.3.7.0.PDTCNXM%22%7D&sign=95a7b18a89cb3419d1b54658f25216aec5d4df21&nonce=-5530817897123709456&i=37828e023677ad6e78e96f1c8506e8c4&oaid=56fbb3561e299e40&oaid_imei_both_have=true&ui_version=87&is_pad=false&miui_version=V10&package_name=com.miui.fm&support_fmservice=false\n贵州::https://fm.music.xiaomi.com/fm/v1/category/channel/390?pageType=%2Ffm_broadcast_list/广播/交通台&version_info=%7B%22apk_version%22%3A%22230%22%2C%22apk_version_name%22%3A%221.0.230%22%2C%22device%22%3A%22platina%22%2C%22language%22%3A%22zh_CN%22%2C%22sys_verversion%22%3A%229_V10.3.7.0.PDTCNXM%22%7D&sign=95a7b18a89cb3419d1b54658f25216aec5d4df21&nonce=-5530817897123709456&i=37828e023677ad6e78e96f1c8506e8c4&oaid=56fbb3561e299e40&oaid_imei_both_have=true&ui_version=87&is_pad=false&miui_version=V10&package_name=com.miui.fm&support_fmservice=false\n海南::https://fm.music.xiaomi.com/fm/v1/category/channel/389?pageType=%2Ffm_broadcast_list/广播/交通台&version_info=%7B%22apk_version%22%3A%22230%22%2C%22apk_version_name%22%3A%221.0.230%22%2C%22device%22%3A%22platina%22%2C%22language%22%3A%22zh_CN%22%2C%22sys_verversion%22%3A%229_V10.3.7.0.PDTCNXM%22%7D&sign=95a7b18a89cb3419d1b54658f25216aec5d4df21&nonce=-5530817897123709456&i=37828e023677ad6e78e96f1c8506e8c4&oaid=56fbb3561e299e40&oaid_imei_both_have=true&ui_version=87&is_pad=false&miui_version=V10&package_name=com.miui.fm&support_fmservice=false\n广西::https://fm.music.xiaomi.com/fm/v1/category/channel/388?pageType=%2Ffm_broadcast_list/广播/交通台&version_info=%7B%22apk_version%22%3A%22230%22%2C%22apk_version_name%22%3A%221.0.230%22%2C%22device%22%3A%22platina%22%2C%22language%22%3A%22zh_CN%22%2C%22sys_verversion%22%3A%229_V10.3.7.0.PDTCNXM%22%7D&sign=95a7b18a89cb3419d1b54658f25216aec5d4df21&nonce=-5530817897123709456&i=37828e023677ad6e78e96f1c8506e8c4&oaid=56fbb3561e299e40&oaid_imei_both_have=true&ui_version=87&is_pad=false&miui_version=V10&package_name=com.miui.fm&support_fmservice=false\n广东::https://fm.music.xiaomi.com/fm/v1/category/channel/387?pageType=%2Ffm_broadcast_list/广播/交通台&version_info=%7B%22apk_version%22%3A%22230%22%2C%22apk_version_name%22%3A%221.0.230%22%2C%22device%22%3A%22platina%22%2C%22language%22%3A%22zh_CN%22%2C%22sys_verversion%22%3A%229_V10.3.7.0.PDTCNXM%22%7D&sign=95a7b18a89cb3419d1b54658f25216aec5d4df21&nonce=-5530817897123709456&i=37828e023677ad6e78e96f1c8506e8c4&oaid=56fbb3561e299e40&oaid_imei_both_have=true&ui_version=87&is_pad=false&miui_version=V10&package_name=com.miui.fm&support_fmservice=false\n湖南::https://fm.music.xiaomi.com/fm/v1/category/channel/386?pageType=%2Ffm_broadcast_list/广播/交通台&version_info=%7B%22apk_version%22%3A%22230%22%2C%22apk_version_name%22%3A%221.0.230%22%2C%22device%22%3A%22platina%22%2C%22language%22%3A%22zh_CN%22%2C%22sys_verversion%22%3A%229_V10.3.7.0.PDTCNXM%22%7D&sign=95a7b18a89cb3419d1b54658f25216aec5d4df21&nonce=-5530817897123709456&i=37828e023677ad6e78e96f1c8506e8c4&oaid=56fbb3561e299e40&oaid_imei_both_have=true&ui_version=87&is_pad=false&miui_version=V10&package_name=com.miui.fm&support_fmservice=false\n湖北::https://fm.music.xiaomi.com/fm/v1/category/channel/385?pageType=%2Ffm_broadcast_list/广播/交通台&version_info=%7B%22apk_version%22%3A%22230%22%2C%22apk_version_name%22%3A%221.0.230%22%2C%22device%22%3A%22platina%22%2C%22language%22%3A%22zh_CN%22%2C%22sys_verversion%22%3A%229_V10.3.7.0.PDTCNXM%22%7D&sign=95a7b18a89cb3419d1b54658f25216aec5d4df21&nonce=-5530817897123709456&i=37828e023677ad6e78e96f1c8506e8c4&oaid=56fbb3561e299e40&oaid_imei_both_have=true&ui_version=87&is_pad=false&miui_version=V10&package_name=com.miui.fm&support_fmservice=false\n福建::https://fm.music.xiaomi.com/fm/v1/category/channel/384?pageType=%2Ffm_broadcast_list/广播/交通台&version_info=%7B%22apk_version%22%3A%22230%22%2C%22apk_version_name%22%3A%221.0.230%22%2C%22device%22%3A%22platina%22%2C%22language%22%3A%22zh_CN%22%2C%22sys_verversion%22%3A%229_V10.3.7.0.PDTCNXM%22%7D&sign=95a7b18a89cb3419d1b54658f25216aec5d4df21&nonce=-5530817897123709456&i=37828e023677ad6e78e96f1c8506e8c4&oaid=56fbb3561e299e40&oaid_imei_both_have=true&ui_version=87&is_pad=false&miui_version=V10&package_name=com.miui.fm&support_fmservice=false\n河南::https://fm.music.xiaomi.com/fm/v1/category/channel/383?pageType=%2Ffm_broadcast_list/广播/交通台&version_info=%7B%22apk_version%22%3A%22230%22%2C%22apk_version_name%22%3A%221.0.230%22%2C%22device%22%3A%22platina%22%2C%22language%22%3A%22zh_CN%22%2C%22sys_verversion%22%3A%229_V10.3.7.0.PDTCNXM%22%7D&sign=95a7b18a89cb3419d1b54658f25216aec5d4df21&nonce=-5530817897123709456&i=37828e023677ad6e78e96f1c8506e8c4&oaid=56fbb3561e299e40&oaid_imei_both_have=true&ui_version=87&is_pad=false&miui_version=V10&package_name=com.miui.fm&support_fmservice=false\n江西::https://fm.music.xiaomi.com/fm/v1/category/channel/382?pageType=%2Ffm_broadcast_list/广播/交通台&version_info=%7B%22apk_version%22%3A%22230%22%2C%22apk_version_name%22%3A%221.0.230%22%2C%22device%22%3A%22platina%22%2C%22language%22%3A%22zh_CN%22%2C%22sys_verversion%22%3A%229_V10.3.7.0.PDTCNXM%22%7D&sign=95a7b18a89cb3419d1b54658f25216aec5d4df21&nonce=-5530817897123709456&i=37828e023677ad6e78e96f1c8506e8c4&oaid=56fbb3561e299e40&oaid_imei_both_have=true&ui_version=87&is_pad=false&miui_version=V10&package_name=com.miui.fm&support_fmservice=false\n山东::https://fm.music.xiaomi.com/fm/v1/category/channel/381?pageType=%2Ffm_broadcast_list/广播/交通台&version_info=%7B%22apk_version%22%3A%22230%22%2C%22apk_version_name%22%3A%221.0.230%22%2C%22device%22%3A%22platina%22%2C%22language%22%3A%22zh_CN%22%2C%22sys_verversion%22%3A%229_V10.3.7.0.PDTCNXM%22%7D&sign=95a7b18a89cb3419d1b54658f25216aec5d4df21&nonce=-5530817897123709456&i=37828e023677ad6e78e96f1c8506e8c4&oaid=56fbb3561e299e40&oaid_imei_both_have=true&ui_version=87&is_pad=false&miui_version=V10&package_name=com.miui.fm&support_fmservice=false\n安微::https://fm.music.xiaomi.com/fm/v1/category/channel/380?pageType=%2Ffm_broadcast_list/广播/交通台&version_info=%7B%22apk_version%22%3A%22230%22%2C%22apk_version_name%22%3A%221.0.230%22%2C%22device%22%3A%22platina%22%2C%22language%22%3A%22zh_CN%22%2C%22sys_verversion%22%3A%229_V10.3.7.0.PDTCNXM%22%7D&sign=95a7b18a89cb3419d1b54658f25216aec5d4df21&nonce=-5530817897123709456&i=37828e023677ad6e78e96f1c8506e8c4&oaid=56fbb3561e299e40&oaid_imei_both_have=true&ui_version=87&is_pad=false&miui_version=V10&package_name=com.miui.fm&support_fmservice=false\n黑龙江::https://fm.music.xiaomi.com/fm/v1/category/channel/379?pageType=%2Ffm_broadcast_list/广播/交通台&version_info=%7B%22apk_version%22%3A%22230%22%2C%22apk_version_name%22%3A%221.0.230%22%2C%22device%22%3A%22platina%22%2C%22language%22%3A%22zh_CN%22%2C%22sys_verversion%22%3A%229_V10.3.7.0.PDTCNXM%22%7D&sign=95a7b18a89cb3419d1b54658f25216aec5d4df21&nonce=-5530817897123709456&i=37828e023677ad6e78e96f1c8506e8c4&oaid=56fbb3561e299e40&oaid_imei_both_have=true&ui_version=87&is_pad=false&miui_version=V10&package_name=com.miui.fm&support_fmservice=false\n\n吉林::https://fm.music.xiaomi.com/fm/v1/category/channel/378?pageType=%2Ffm_broadcast_list/广播/交通台&version_info=%7B%22apk_version%22%3A%22230%22%2C%22apk_version_name%22%3A%221.0.230%22%2C%22device%22%3A%22platina%22%2C%22language%22%3A%22zh_CN%22%2C%22sys_verversion%22%3A%229_V10.3.7.0.PDTCNXM%22%7D&sign=95a7b18a89cb3419d1b54658f25216aec5d4df21&nonce=-5530817897123709456&i=37828e023677ad6e78e96f1c8506e8c4&oaid=56fbb3561e299e40&oaid_imei_both_have=true&ui_version=87&is_pad=false&miui_version=V10&package_name=com.miui.fm&support_fmservice=false\n江苏台::https://fm.music.xiaomi.com/fm/v1/category/channel/376?pageType=%2Ffm_broadcast_list/广播/交通台&version_info=%7B%22apk_version%22%3A%22230%22%2C%22apk_version_name%22%3A%221.0.230%22%2C%22device%22%3A%22platina%22%2C%22language%22%3A%22zh_CN%22%2C%22sys_verversion%22%3A%229_V10.3.7.0.PDTCNXM%22%7D&sign=95a7b18a89cb3419d1b54658f25216aec5d4df21&nonce=-5530817897123709456&i=37828e023677ad6e78e96f1c8506e8c4&oaid=56fbb3561e299e40&oaid_imei_both_have=true&ui_version=87&is_pad=false&miui_version=V10&package_name=com.miui.fm&support_fmservice=false\n辽宁::https://fm.music.xiaomi.com/fm/v1/category/channel/375?pageType=%2Ffm_broadcast_list/广播/交通台&version_info=%7B%22apk_version%22%3A%22230%22%2C%22apk_version_name%22%3A%221.0.230%22%2C%22device%22%3A%22platina%22%2C%22language%22%3A%22zh_CN%22%2C%22sys_verversion%22%3A%229_V10.3.7.0.PDTCNXM%22%7D&sign=95a7b18a89cb3419d1b54658f25216aec5d4df21&nonce=-5530817897123709456&i=37828e023677ad6e78e96f1c8506e8c4&oaid=56fbb3561e299e40&oaid_imei_both_have=true&ui_version=87&is_pad=false&miui_version=V10&package_name=com.miui.fm&support_fmservice=false\n内蒙古::https://fm.music.xiaomi.com/fm/v1/category/channel/374?pageType=%2Ffm_broadcast_list/广播/交通台&version_info=%7B%22apk_version%22%3A%22230%22%2C%22apk_version_name%22%3A%221.0.230%22%2C%22device%22%3A%22platina%22%2C%22language%22%3A%22zh_CN%22%2C%22sys_verversion%22%3A%229_V10.3.7.0.PDTCNXM%22%7D&sign=95a7b18a89cb3419d1b54658f25216aec5d4df21&nonce=-5530817897123709456&i=37828e023677ad6e78e96f1c8506e8c4&oaid=56fbb3561e299e40&oaid_imei_both_have=true&ui_version=87&is_pad=false&miui_version=V10&package_name=com.miui.fm&support_fmservice=false\n河北台::https://fm.music.xiaomi.com/fm/v1/category/channel/371?pageType=%2Ffm_broadcast_list/广播/交通台&version_info=%7B%22apk_version%22%3A%22230%22%2C%22apk_version_name%22%3A%221.0.230%22%2C%22device%22%3A%22platina%22%2C%22language%22%3A%22zh_CN%22%2C%22sys_verversion%22%3A%229_V10.3.7.0.PDTCNXM%22%7D&sign=95a7b18a89cb3419d1b54658f25216aec5d4df21&nonce=-5530817897123709456&i=37828e023677ad6e78e96f1c8506e8c4&oaid=56fbb3561e299e40&oaid_imei_both_have=true&ui_version=87&is_pad=false&miui_version=V10&package_name=com.miui.fm&support_fmservice=false\n山西台::https://fm.music.xiaomi.com/fm/v1/category/channel/373?pageType=%2Ffm_broadcast_list/广播/交通台&version_info=%7B%22apk_version%22%3A%22230%22%2C%22apk_version_name%22%3A%221.0.230%22%2C%22device%22%3A%22platina%22%2C%22language%22%3A%22zh_CN%22%2C%22sys_verversion%22%3A%229_V10.3.7.0.PDTCNXM%22%7D&sign=95a7b18a89cb3419d1b54658f25216aec5d4df21&nonce=-5530817897123709456&i=37828e023677ad6e78e96f1c8506e8c4&oaid=56fbb3561e299e40&oaid_imei_both_have=true&ui_version=87&is_pad=false&miui_version=V10&package_name=com.miui.fm&support_fmservice=false\n国家台::https://fm.music.xiaomi.com/fm/v1/category/channel/370?pageType=%2Ffm_broadcast_list%2F%E5%B9%BF%E6%92%AD%2F%E5%9B%BD%E5%AE%B6%E5%8F%B0&version_info=%7B%22apk_version%22%3A%22230%22%2C%22apk_version_name%22%3A%221.0.230%22%2C%22device%22%3A%22platina%22%2C%22language%22%3A%22zh_CN%22%2C%22sys_verversion%22%3A%229_V10.3.7.0.PDTCNXM%22%7D&sign=2a57df4bf0b8a5e428b079783f529eeddac4f39d&nonce=9213596406902170431&i=37828e023677ad6e78e96f1c8506e8c4&oaid=56fbb3561e299e40&oaid_imei_both_have=true&ui_version=87&is_pad=false&miui_version=V10&package_name=com.miui.fm&support_fmservice=false\n音乐台::https://fm.music.xiaomi.com/fm/v1/category/channel/404?pageType=%2Ffm_broadcast_list/广播/交通台&version_info=%7B%22apk_version%22%3A%22230%22%2C%22apk_version_name%22%3A%221.0.230%22%2C%22device%22%3A%22platina%22%2C%22language%22%3A%22zh_CN%22%2C%22sys_verversion%22%3A%229_V10.3.7.0.PDTCNXM%22%7D&sign=95a7b18a89cb3419d1b54658f25216aec5d4df21&nonce=-5530817897123709456&i=37828e023677ad6e78e96f1c8506e8c4&oaid=56fbb3561e299e40&oaid_imei_both_have=true&ui_version=87&is_pad=false&miui_version=V10&package_name=com.miui.fm&support_fmservice=false\n资讯广播::https://fm.music.xiaomi.com/fm/v1/category/channel/397?pageType=%2Ffm_broadcast_list%2F%E5%B9%BF%E6%92%AD%2F%E8%B5%84%E8%AE%AF%E5%8F%B0&version_info=%7B%22apk_version%22%3A%22230%22%2C%22apk_version_name%22%3A%221.0.230%22%2C%22device%22%3A%22platina%22%2C%22language%22%3A%22zh_CN%22%2C%22sys_verversion%22%3A%229_V10.3.7.0.PDTCNXM%22%7D&sign=bdabdf5fe65fe58bc800c2bcd9c3658e1847da6b&nonce=-5845902009413785201&i=37828e023677ad6e78e96f1c8506e8c4&oaid=56fbb3561e299e40&oaid_imei_both_have=true&ui_version=87&is_pad=false&miui_version=V10&package_name=com.miui.fm&support_fmservice=false",
+    "lastUpdateTime": 1617108887435,
+    "respondTime": 579,
+    "ruleBookInfo": {
+      "coverUrl": "$..cover_url",
+      "intro": "$..intro",
+      "name": "$..channel_name"
+    },
+    "ruleContent": {
+      "content": "<js>baseUrl</js>"
+    },
+    "ruleExplore": {
+      "author": "",
+      "bookList": "$.children",
+      "bookUrl": "https://fm.music.xiaomi.com{$..request_url}",
+      "coverUrl": "$..pic_large_url",
+      "intro": "$..intro",
+      "kind": "{{$..subtitle}}",
+      "name": "{{$.data..name}}"
+    },
+    "ruleSearch": {},
+    "ruleToc": {
+      "chapterList": "$..list.*",
+      "chapterName": "$..channel_name",
+      "chapterUrl": "http://open.ls.qingting.fm/live/{{$..qt_channel_id}}/24k.m3u8?deviceid=652f2086-a7ae-3c71-afb1-ef1fd020ff23"
+    },
+    "weight": 0
+  },
+  {
+    "bookSourceComment": "",
+    "bookSourceGroup": "音乐",
+    "bookSourceName": "音乐-5sing翻唱",
+    "bookSourceType": 1,
+    "bookSourceUrl": "https://music.liuzhijin.cn-5singfc",
+    "customOrder": -3533,
+    "enabled": true,
+    "enabledCookieJar": false,
+    "enabledExplore": true,
+    "enabledReview": false,
+    "header": "",
+    "lastUpdateTime": 0,
+    "respondTime": 4613,
+    "ruleBookInfo": {},
+    "ruleContent": {},
+    "ruleExplore": {},
+    "ruleSearch": {
+      "author": "$.author",
+      "bookList": "$.data[*]",
+      "bookUrl": "$.url",
+      "coverUrl": "$.pic",
+      "intro": "$.lrc",
+      "name": "$.title@put:{title:$.title,url:$.url}"
+    },
+    "ruleToc": {
+      "chapterList": "@js:\nresult=[{text:java.get('title'),href:java.get('url')}]",
+      "chapterName": "text",
+      "chapterUrl": "href"
+    },
+    "searchUrl": "https://music.liuzhijin.cn,{\n\"method\": \"POST\",\n\"body\": \"input={{key}}&filter=name&type=5singfc&page={{page}}\",\n\"headers\": {\"x-requested-with\": \"XMLHttpRequest\"}\n}",
+    "weight": 0
+  },
+  {
+    "bookSourceComment": "",
+    "bookSourceGroup": "音乐",
+    "bookSourceName": "音乐-一听",
+    "bookSourceType": 1,
+    "bookSourceUrl": "https://music.liuzhijin.cn-1ting",
+    "customOrder": -3531,
+    "enabled": true,
+    "enabledCookieJar": false,
+    "enabledExplore": true,
+    "enabledReview": false,
+    "header": "",
+    "lastUpdateTime": 0,
+    "respondTime": 3512,
+    "ruleBookInfo": {},
+    "ruleContent": {},
+    "ruleExplore": {},
+    "ruleSearch": {
+      "author": "$.author",
+      "bookList": "$.data[*]",
+      "bookUrl": "$.url",
+      "coverUrl": "$.pic",
+      "intro": "$.lrc",
+      "name": "$.title@put:{title:$.title,url:$.url}"
+    },
+    "ruleToc": {
+      "chapterList": "@js:\nresult=[{text:java.get('title'),href:java.get('url')}]",
+      "chapterName": "text",
+      "chapterUrl": "href"
+    },
+    "searchUrl": "https://music.liuzhijin.cn,{\n\"method\": \"POST\",\n\"body\": \"input={{key}}&filter=name&type=1ting&page={{page}}\",\n\"headers\": {\"x-requested-with\": \"XMLHttpRequest\"}\n}",
+    "weight": 0
+  },
+  {
+    "bookSourceComment": "",
+    "bookSourceGroup": "音乐",
+    "bookSourceName": "音乐-酷我",
+    "bookSourceType": 1,
+    "bookSourceUrl": "https://music.liuzhijin.cn-kuwo",
+    "customOrder": -3528,
+    "enabled": true,
+    "enabledCookieJar": false,
+    "enabledExplore": true,
+    "enabledReview": false,
+    "header": "",
+    "lastUpdateTime": 0,
+    "respondTime": 5613,
+    "ruleBookInfo": {},
+    "ruleContent": {},
+    "ruleExplore": {},
+    "ruleSearch": {
+      "author": "$.author",
+      "bookList": "$.data[*]",
+      "bookUrl": "$.url",
+      "coverUrl": "$.pic",
+      "intro": "$.lrc",
+      "name": "$.title@put:{title:$.title,url:$.url}"
+    },
+    "ruleToc": {
+      "chapterList": "@js:\nresult=[{text:java.get('title'),href:java.get('url')}]",
+      "chapterName": "text",
+      "chapterUrl": "href"
+    },
+    "searchUrl": "https://music.liuzhijin.cn,{\n\"method\": \"POST\",\n\"body\": \"input={{key}}&filter=name&type=kuwo&page={{page}}\",\n\"headers\": {\"x-requested-with\": \"XMLHttpRequest\"}\n}",
+    "weight": 0
+  },
+  {
+    "bookSourceComment": "",
+    "bookSourceGroup": "音乐",
+    "bookSourceName": "音乐-网易云",
+    "bookSourceType": 1,
+    "bookSourceUrl": "https://music.liuzhijin.cn-netease",
+    "customOrder": -3526,
+    "enabled": true,
+    "enabledCookieJar": false,
+    "enabledExplore": true,
+    "enabledReview": false,
+    "header": "",
+    "lastUpdateTime": 0,
+    "respondTime": 4739,
+    "ruleBookInfo": {},
+    "ruleContent": {},
+    "ruleExplore": {},
+    "ruleSearch": {
+      "author": "$.author",
+      "bookList": "$.data[*]",
+      "bookUrl": "$.url",
+      "coverUrl": "$.pic",
+      "intro": "$.lrc",
+      "name": "$.title@put:{title:$.title,url:$.url}"
+    },
+    "ruleToc": {
+      "chapterList": "@js:\nresult=[{text:java.get('title'),href:java.get('url')}]",
+      "chapterName": "text",
+      "chapterUrl": "href"
+    },
+    "searchUrl": "https://music.liuzhijin.cn,{\n\"method\": \"POST\",\n\"body\": \"input={{key}}&filter=name&type=netease&page={{page}}\",\n\"headers\": {\"x-requested-with\": \"XMLHttpRequest\"}\n}",
+    "weight": 0
+  },
+  {
+    "bookSourceComment": "",
+    "bookSourceGroup": "音乐",
+    "bookSourceName": "音乐-qq",
+    "bookSourceType": 1,
+    "bookSourceUrl": "https://music.liuzhijin.cn-qq",
+    "customOrder": -3525,
+    "enabled": true,
+    "enabledCookieJar": false,
+    "enabledExplore": true,
+    "enabledReview": false,
+    "header": "",
+    "lastUpdateTime": 0,
+    "respondTime": 5101,
+    "ruleBookInfo": {},
+    "ruleContent": {},
+    "ruleExplore": {},
+    "ruleSearch": {
+      "author": "$.author",
+      "bookList": "$.data[*]",
+      "bookUrl": "$.url",
+      "coverUrl": "$.pic",
+      "intro": "$.lrc",
+      "name": "$.title@put:{title:$.title,url:$.url}"
+    },
+    "ruleToc": {
+      "chapterList": "@js:\nresult=[{text:java.get('title'),href:java.get('url')}]",
+      "chapterName": "text",
+      "chapterUrl": "href"
+    },
+    "searchUrl": "https://music.liuzhijin.cn,{\n\"method\": \"POST\",\n\"body\": \"input={{key}}&filter=name&type=qq&page={{page}}\",\n\"headers\": {\"x-requested-with\": \"XMLHttpRequest\"}\n}",
+    "weight": 0
+  },
+  {
+    "bookSourceComment": "",
+    "bookSourceGroup": "有声★☆★☆★☆★☆",
+    "bookSourceName": "★☆🎧喜马拉雅3.0★☆",
+    "bookSourceType": 1,
+    "bookSourceUrl": "http://search.ximalaya.com",
+    "customOrder": -92,
+    "enabled": true,
+    "enabledCookieJar": false,
+    "enabledExplore": true,
+    "enabledReview": false,
+    "exploreUrl": "玄幻::http://search.ximalaya.com/speed/album/v1/list?condition=relation&core=album&device=android&fq=categoryId:3&kw=玄幻&page={{page}}&rows=20&spellchecker=true\n大剧::http://search.ximalaya.com/speed/album/v1/list?condition=relation&core=album&device=android&fq=categoryId:3&kw=大剧&page={{page}}&rows=20&spellchecker=true\n仙侠::http://search.ximalaya.com/speed/album/v1/list?condition=relation&core=album&device=android&fq=categoryId:3&kw=仙侠&page={{page}}&rows=20&spellchecker=true\n都市::http://search.ximalaya.com/speed/album/v1/list?condition=relation&core=album&device=android&fq=categoryId:3&kw=都市&page={{page}}&rows=20&spellchecker=true\n经典::http://search.ximalaya.com/speed/album/v1/list?condition=relation&core=album&device=android&fq=categoryId:3&kw=经典&page={{page}}&rows=20&spellchecker=true\n幻想::http://search.ximalaya.com/speed/album/v1/list?condition=relation&core=album&device=android&fq=categoryId:3&kw=幻想&page={{page}}&rows=20&spellchecker=true\n武侠::http://search.ximalaya.com/speed/album/v1/list?condition=relation&core=album&device=android&fq=categoryId:3&kw=武侠&page={{page}}&rows=20&spellchecker=true\n历史小说::http://search.ximalaya.com/speed/album/v1/list?condition=relation&core=album&device=android&fq=categoryId:3&kw=历史小说&page={{page}}&rows=20&spellchecker=true\n教材::http://search.ximalaya.com/speed/album/v1/list?condition=relation&core=album&device=android&fq=categoryId:3&kw=教材&page={{page}}&rows=20&spellchecker=true\n多人剧::http://search.ximalaya.com/speed/album/v1/list?condition=relation&core=album&device=android&fq=categoryId:3&kw=多人剧&page={{page}}&rows=20&spellchecker=true\n相声::http://search.ximalaya.com/speed/album/v1/list?condition=relation&core=album&device=android&fq=categoryId:3&kw=相声&page={{page}}&rows=20&spellchecker=true\n外文原版::http://search.ximalaya.com/speed/album/v1/list?condition=relation&core=album&device=android&fq=categoryId:3&kw=英文原版&page={{page}}&rows=20&spellchecker=true\n名著::http://search.ximalaya.com/speed/album/v1/list?condition=relation&core=album&device=android&fq=categoryId:3&kw=名著&page={{page}}&rows=20&spellchecker=true\n乡村::http://search.ximalaya.com/speed/album/v1/list?condition=relation&core=album&device=android&fq=categoryId:3&kw=乡村&page={{page}}&rows=20&spellchecker=true\n广播剧::http://search.ximalaya.com/speed/album/v1/list?condition=relation&core=album&device=android&fq=categoryId:3&kw=广播剧&page={{page}}&rows=20&spellchecker=true\n游戏::http://search.ximalaya.com/speed/album/v1/list?condition=relation&core=album&device=android&fq=categoryId:3&kw=游戏&page={{page}}&rows=20&spellchecker=true\n无限::http://search.ximalaya.com/speed/album/v1/list?condition=relation&core=album&device=android&fq=categoryId:3&kw=无限&page={{page}}&rows=20&spellchecker=true\n魔幻::http://search.ximalaya.com/speed/album/v1/list?condition=relation&core=album&device=android&fq=categoryId:3&kw=魔法&page={{page}}&rows=20&spellchecker=true\n☆                              音              乐                           ☆::http://search.ximalaya.com/speed/album/v1/list?condition=relation&core=album&device=android&fq=categoryId:2&kw=音乐&page={{page}}&rows=20&spellchecker=true\n乡村::http://search.ximalaya.com/speed/album/v1/list?condition=relation&core=album&device=android&fq=categoryId:2&kw=乡村&page={{page}}&rows=20&spellchecker=true\n流行::http://search.ximalaya.com/speed/album/v1/list?condition=relation&core=album&device=android&fq=categoryId:2&kw=流行Top&page={{page}}&rows=20&spellchecker=true\n排行榜::http://search.ximalaya.com/speed/album/v1/list?condition=relation&core=album&device=android&fq=categoryId:2&kw=榜单&page={{page}}&rows=20&spellchecker=true\n老歌::http://search.ximalaya.com/speed/album/v1/list?condition=relation&core=album&device=android&fq=categoryId:2&kw=老歌&page={{page}}&rows=20&spellchecker=true\n巅峰榜::http://search.ximalaya.com/speed/album/v1/list?condition=relation&core=album&device=android&fq=categoryId:2&kw=巅峰榜&page={{page}}&rows=20&spellchecker=true",
+    "lastUpdateTime": 0,
+    "loginUrl": "",
+    "respondTime": 2164,
+    "ruleBookInfo": {
+      "tocUrl": "http://mobile.ximalaya.com/fmobile-album/album/track/ts-1576706285548?ac=4G&albumId=@get:{book}&device=android&isAsc=true&isQueryInvitationBrand=true&isVideoAsc=true&pageSize=200&source=3&supportWebp=true&pageId=1"
+    },
+    "ruleContent": {
+      "content": ""
+    },
+    "ruleExplore": {
+      "bookList": ""
+    },
+    "ruleSearch": {
+      "author": "nickname",
+      "bookList": "$.response.docs",
+      "bookUrl": "http://mobile.ximalaya.com/fmobile-album/album/track/ts-1576706285548?ac=4G&albumId={$.id}&device=android&isAsc=true&isQueryInvitationBrand=true&isVideoAsc=true&pageSize=200&source=3&supportWebp=true&pageId=1",
+      "coverUrl": "cover_path",
+      "intro": "$..intro",
+      "kind": "category_title",
+      "name": "title@put:{book:id}"
+    },
+    "ruleToc": {
+      "chapterList": "$.data.list",
+      "chapterName": "title",
+      "chapterUrl": "playPathAacv224",
+      "nextTocUrl": "<js>\nvar a = 'http://mobile.ximalaya.com/fmobile-album/album/track/ts-1576706285548?ac=4G&albumId=@get:{book}&device=android&isAsc=true&isQueryInvitationBrand=true&isVideoAsc=true&pageSize=200&source=3&supportWebp=true&pageId=';\nvar r = [];\nfor(var i=1;i<40;i++){\n    r.push(a + parseInt(i*1));\n}\nr\n</js>"
+    },
+    "searchUrl": "http://search.ximalaya.com/speed/album/v1/list?condition=relation&core=album&device=android&fq=categoryId:3&kw={{key}}&page={{page}}&rows=20&spellchecker=true",
+    "weight": 0
+  },
+  {
+    "bookSourceComment": "",
+    "bookSourceGroup": "🎧 有声,发现,搜索链接规则为空",
+    "bookSourceName": "清沫电台",
+    "bookSourceType": 1,
+    "bookSourceUrl": "https://www.qingmo.net",
+    "bookUrlPattern": "",
+    "customOrder": 0,
+    "enabled": true,
+    "enabledCookieJar": false,
+    "enabledExplore": true,
+    "enabledReview": false,
+    "exploreUrl": "爱情电台::/listen/aiqingfm<,/page/{{page}}>\n成长电台::/listen/chengzhangfm<,/page/{{page}}>\n温暖电台::/listen/wennuanfm<,/page/{{page}}>\n伤感电台::/listen/zhiyufm<,/page/{{page}}>\n音乐电台::/music-story<,/page/{{page}}>\n广播电台::/guangbodiantai<,/page/{{page}}>\n有声读物::/youshengduwu<,/page/{{page}}>",
+    "lastUpdateTime": 0,
+    "loginUrl": "｡◕‿◕｡",
+    "respondTime": 1470,
+    "ruleBookInfo": {},
+    "ruleContent": {
+      "content": "class.wptao-item@tag.audio@src"
+    },
+    "ruleExplore": {
+      "bookList": "class.postone",
+      "bookUrl": "class.thumbnail@tag.a@href",
+      "coverUrl": "class.thumbnail@tag.img@src@js:result||'http://1t.click/HNK'",
+      "intro": "class.entry-content@text",
+      "kind": "class.tags@tag.a@text",
+      "name": "tag.h2@tag.a@text"
+    },
+    "ruleSearch": {},
+    "ruleToc": {
+      "chapterList": "tag.h2",
+      "chapterName": "text"
+    },
+    "weight": 0
+  },
+  {
+    "bookSourceComment": "",
+    "bookSourceName": "猫耳",
+    "bookSourceType": 1,
+    "bookSourceUrl": "https://www.missevan.com",
+    "customOrder": 0,
+    "enabled": true,
+    "enabledCookieJar": false,
+    "enabledExplore": true,
+    "enabledReview": false,
+    "lastUpdateTime": 1602202977885,
+    "respondTime": 1791,
+    "ruleBookInfo": {
+      "intro": "class.intro-content@text||$.info.sound.intro",
+      "kind": "class.detail-count@text&&class.detail-newest@text&&class.detail-author@text&&class.detail-type@text&&class.detail-tags@text##类型：|标签：无|标签：",
+      "tocUrl": "@js:\nif(baseUrl.match(/dramaapi/)){\nresult='https://www.missevan.com/dramaapi/getdrama?drama_id='+baseUrl.match(/(\\d+)/)[1]\n}"
+    },
+    "ruleContent": {
+      "content": "$.info.sound.soundurl_128||$.info.sound.soundurl"
+    },
+    "ruleExplore": {},
+    "ruleSearch": {
+      "author": "$.username||$.author",
+      "bookList": "<js>\nkey=java.get('key');\npage=java.get('page');\n\n//创建两个空数组\njson=[];json2=[];\n\n//判定json里是否有列表\nif(JSON.parse(result).info.Datas){\njson=JSON.parse(result).info.Datas;}\n\n//加载作者搜索页面并转为json\njson1=JSON.parse(java.ajax('https://www.missevan.com/sound/getsearch?s='+key+'&type=3&page_size=10&p='+page));\n\n//判定json里是否有列表\nif(json1.info.Datas){\njson2=json1.info.Datas\n}\n\n//书名搜索列表与作者搜索列表拼接\nlist=json.concat(json2);\n\nresult=JSON.stringify(list)\n</js>\n$.[*]",
+      "bookUrl": "<js>\nid=String(result).match(/id=(\\d+)/)[1];\nif(!String(result).match(/catalog_name/)){\nresult='https://www.missevan.com/sound/getsound?soundid='+id\n}else{result='https://www.missevan.com/dramaapi/getdrama?drama_id='+id}\n</js>",
+      "coverUrl": "$.front_cover||$.cover",
+      "intro": "$.abstract",
+      "kind": "{$.type_name},{$.catalog_name}##\\{.*?\\}",
+      "lastChapter": "$.newest",
+      "name": "$.soundstr||$.name"
+    },
+    "ruleToc": {
+      "chapterList": "<js>'['+result+']'</js>\n$..info.episodes.episode[*]||$..info.episodes.music[*]||$.[*]",
+      "chapterName": "$.name||$.info.sound.soundstr",
+      "chapterUrl": "https://www.missevan.com/sound/getsound?soundid={{$.sound_id||$.info.sound.id}}"
+    },
+    "searchUrl": "https://www.missevan.com/dramaapi/search?s={{key}}&page={{page}}\n@js:java.put('key',key);java.put('page',page);result",
+    "weight": 0
+  },
+  {
+    "bookSourceComment": "",
+    "bookSourceName": "听中国",
+    "bookSourceType": 1,
+    "bookSourceUrl": "http://www.tings8.com",
+    "customOrder": 0,
+    "enabled": true,
+    "enabledCookieJar": false,
+    "enabledExplore": true,
+    "enabledReview": false,
+    "exploreUrl": "玄幻|奇幻::/pc/index/category/catid/6.html?page={{page}}\n都市|言情::/pc/index/category/catid/7.html?page={{page}}\n宫斗|女频::/pc/index/category/catid/8.html?page={{page}}\n官场|商战::/pc/index/category/catid/9.html?page={{page}}\n武侠|仙侠::/pc/index/category/catid/10.html?page={{page}}\n刑侦|推理::/pc/index/category/catid/11.html?page={{page}}\n探险|异术::/pc/index/category/catid/12.html?page={{page}}\n重生|穿越::/pc/index/category/catid/13.html?page={{page}}\n恐怖|惊悚::/pc/index/category/catid/14.html?page={{page}}\n文学|历史::/pc/index/category/catid/15.html?page={{page}}",
+    "lastUpdateTime": 1612085966697,
+    "respondTime": 22106,
+    "ruleBookInfo": {
+      "author": "class.book-info@tag.dd.2@ownText",
+      "coverUrl": "class.book-cover@src",
+      "intro": "class.book-des@text",
+      "kind": "class.book-info@tag.dd.1@a@text&&class.book-info@tag.dd.3@text&&class.book-info@tag.dd.-2@ownText##\\|##,",
+      "name": "class.book-title'text",
+      "tocUrl": ""
+    },
+    "ruleContent": {
+      "content": "all\n@js:header={\"Referer\":String(result).replace(/\\s/g,'')}\nheaders={\"headers\":JSON.stringify(header)}\nresult=result.replace(/\\s/g,'')+','+JSON.stringify(headers)",
+      "sourceRegex": ".*\\.(m4a|mp4|mp3).*"
+    },
+    "ruleExplore": {
+      "bookList": ""
+    },
+    "ruleSearch": {
+      "author": "class.book-author.0@ownText",
+      "bookList": "class.list-works@li",
+      "bookUrl": "tag.a.0@href",
+      "coverUrl": "img@data-original",
+      "intro": "class.list-book-des@text",
+      "kind": "class.ztlz@text",
+      "lastChapter": "class.book-author.2@a@text",
+      "name": "class.list-book-dt@tag.a.0@text"
+    },
+    "ruleToc": {
+      "chapterList": "id.playlist@li@a",
+      "chapterName": "text",
+      "chapterUrl": "href##$##,{\"webView\":true}"
+    },
+    "searchUrl": "http://www.tings8.com/pc/index/search.html?keyword={{key}}",
+    "weight": 0
+  },
+  {
+    "bookSourceComment": "",
+    "bookSourceGroup": "发现,阅读3.0有声源",
+    "bookSourceName": "5婶🐱",
+    "bookSourceType": 1,
+    "bookSourceUrl": "http://5sing.kugou.com",
+    "bookUrlPattern": "",
+    "customOrder": 23,
+    "enabled": true,
+    "enabledCookieJar": false,
+    "enabledExplore": true,
+    "enabledReview": false,
+    "exploreUrl": "热门歌单::/gd/gdList?&type=0&page={{page}}\n最新歌单::/gd/gdList?&type=1&page={{page}}\n流行::/gd/gdList?&tagName=%E6%B5%81%E8%A1%8C&type=1&page={{page}}\n爵士::/gd/gdList?&tagName=%E7%88%B5%E5%A3%AB&page={{page}}\n小清新::/gd/gdList?&tagName=%E5%B0%8F%E6%B8%85%E6%96%B0&page={{page}}\n轻音乐::/gd/gdList?&tagName=%E8%BD%BB%E9%9F%B3%E4%B9%90&page={{page}}\n中国风::/gd/gdList?&tagName=%E4%B8%AD%E5%9B%BD%E9%A3%8E&page={{page}}\n摇滚::/gd/gdList?&tagName=%E6%91%87%E6%BB%9A&page={{page}}\n古风::/gd/gdList?&tagName=%E5%8F%A4%E9%A3%8E&page={{page}}\nDJ::http://5sing.kugou.com/gd/gdList?&tagName=DJ&page={{page}}\n武侠::/gd/gdList?&tagName=%E6%AD%A6%E4%BE%A0&page={{page}}\n最新 ⇨::/yc/list?t=-1&l=&s=&p={{page}}\n原创::/yc/list?t=1&s=&p={{page}}\n⇦ 推荐::/yc/list?t=1&s=&p={{page}}\n华语::/yc/list?t=1&s=&l=华语&p={{page}}\n欧美::/yc/list?t=1&s=&l=欧美&p={{page}}\n日语::/yc/list?t=1&s=&l=日语&p={{page}}\n韩语::/yc/list?t=1&s=&l=韩语&p={{page}}\n俄语::/yc/list?t=1&s=&l=俄语&p={{page}}\n法语::/yc/list?t=1&s=&l=法语&p={{page}}\n德语::/yc/list?t=1&s=&l=德语&p={{page}}\n粤语::/yc/list?t=1&s=&l=粤语&p={{page}}\n闽南语::/yc/list?t=1&s=&l=闽南语&p={{page}}\n方言::/yc/list?t=1&s=&l=方言&p={{page}}\n西班牙语::/yc/list?t=1&s=&l=西班牙语&p={{page}}\n其它语::/yc/list?t=1&s=&l=其它&p={{page}}\n候选::/yc/list?t=2&l=&s=&p={{page}}\n传播榜::/yc/spread/more_1.shtml\n分享榜::/yc/share/more_1.shtml\n\n最新 ⇨::/fc/list?t=-1&l=&s=&p={{page}}\n翻唱::/fc/list?t=1&s=&p={{page}}\n⇦ 推荐::/fc/list?t=1&s=&p={{page}}\n华语::/fc/list?t=1&s=&l=华语&p={{page}}\n欧美::/fc/list?t=1&s=&l=欧美&p={{page}}\n日语::/fc/list?t=1&s=&l=日语&p={{page}}\n韩语::/fc/list?t=1&s=&l=韩语&p={{page}}\n俄语::/fc/list?t=1&s=&l=俄语&p={{page}}\n法语::/fc/list?t=1&s=&l=法语&p={{page}}\n德语::/fc/list?t=1&s=&l=德语&p={{page}}\n粤语::/fc/list?t=1&s=&l=粤语&p={{page}}\n闽南语::/fc/list?t=1&s=&l=闽南语&p={{page}}\n方言::/fc/list?t=1&s=&l=方言&p={{page}}\n西班牙语::/fc/list?t=1&s=&l=西班牙语&p={{page}}\n其它语::/fc/list?t=1&s=&l=其它&p={{page}}\n候选::/fc/list?t=2&l=&s=&p={{page}}\n传播榜::/fc/spread/more_1.shtml\n分享榜::/fc/share/more_1.shtml",
+    "header": "{\n  \"User-Agent\": \"Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.73 Safari/537.36\"\n}",
+    "lastUpdateTime": 0,
+    "loginUrl": "",
+    "respondTime": 3333,
+    "ruleBookInfo": {
+      "author": "",
+      "coverUrl": "class.user_tx@tag.img@src",
+      "init": "",
+      "intro": "class.lrc_info_clip@html",
+      "kind": "",
+      "lastChapter": "class.c_wap s_cont@tag.span@text||class.view_info_row@text##,创建.*",
+      "name": "",
+      "tocUrl": "",
+      "wordCount": "class.c_wap tag_box@tag.label@text"
+    },
+    "ruleContent": {
+      "content": "<js>\nvar arr = baseUrl.split('/');\nvar songtype = arr[3];\nvar songid = arr[4].split('.')[0];\nvar data = java.ajax(\"http://service.5sing.kugou.com/song/getSongUrl?version=6.6.70&songid=\" + songid + \"&songtype=\" + songtype);\ndata = JSON.parse(data).data\ndata.squrl || data.hqurl || data.lqurl;\n</js>",
+      "nextContentUrl": ""
+    },
+    "ruleExplore": {
+      "author": "class.author@tag.a.1@text||class.m_z@tag.a@text##音乐人：",
+      "bookList": "class.lists@tag.dl||class.album||tag.tr",
+      "bookUrl": "class.l_info@tag.a@href||tag.a@href",
+      "coverUrl": "class.imgbox@tag.img@src||tag.img@src",
+      "intro": "class.info@text",
+      "kind": "class.lcount@text",
+      "lastChapter": "class.l_time@text",
+      "name": "class.l_info@tag.a.0@text||class.jx_name@text",
+      "wordCount": "class.l_rq@text"
+    },
+    "ruleSearch": {
+      "author": "@JSon:$.singer",
+      "bookList": "@JSon:$.list",
+      "bookUrl": "@JSon:$.songurl",
+      "coverUrl": "@js://随机妹子图\n\"https://uploadbeta.com/api/pictures/random/?key=%E6%8E%A8%E5%A5%B3%E9%83%8E\"",
+      "intro": "optComposer&&songWriter##,##🆙词曲:",
+      "kind": "style&&typeName##,##➡️  ",
+      "lastChapter": "createTime",
+      "name": "@JSon:$.songName<js>result</js>@@tag.em@text",
+      "wordCount": "popularityCnt&&originSinger##,##🎵原唱::"
+    },
+    "ruleToc": {
+      "chapterList": "class.dj_detail_lists@tag.li||class.v_list_info@tag.li",
+      "chapterName": "class.s_title@tag.a.0@text||tag.a@text",
+      "chapterUrl": "class.s_title@tag.a.0@href||tag.a@href",
+      "nextTocUrl": ""
+    },
+    "searchUrl": "http://search.5sing.kugou.com/home/json?keyword={{key}}&sort=1&page={{page}}&filter=0&type=0",
+    "weight": 0
+  },
+  {
+    "bookSourceComment": "",
+    "bookSourceGroup": "阅读3.0有声源",
+    "bookSourceName": "安卓听书",
+    "bookSourceType": 1,
+    "bookSourceUrl": "http://120.25.207.193",
+    "customOrder": 30,
+    "enabled": true,
+    "enabledCookieJar": false,
+    "enabledExplore": false,
+    "enabledReview": false,
+    "lastUpdateTime": 0,
+    "loginUrl": "",
+    "respondTime": 1296,
+    "ruleBookInfo": {},
+    "ruleContent": {
+      "content": "<js>baseUrl.match(/wd=(.*)/)[1]</js>"
+    },
+    "ruleExplore": {},
+    "ruleSearch": {
+      "author": "zz",
+      "bookList": "$.voicelist",
+      "bookUrl": "/voice/list/voicepage?pageNum=1&typeid={$.id}&userid=3dacc573d2d7464c9a7a19dcecd7327b",
+      "coverUrl": "picurl",
+      "kind": "by",
+      "lastChapter": "createtime&&.updatetime",
+      "name": "name"
+    },
+    "ruleToc": {
+      "chapterList": "$.voicelist[*]",
+      "chapterName": "$.title",
+      "chapterUrl": "https://www.baidu.com/s?wd={{$.downurl}}",
+      "nextTocUrl": "<js>\nvar _0x199a=['JnR5cGVpZD00MDI4YzY4MTY1ZGJhNjQxMDE2NWRiZTg2OGMyMWMwMSZ1c2VyaWQ9M2RhY2M1NzNkMmQ3NDY0YzlhN2ExOWRjZWNkNzMyN2I=','cGFyc2U=','dG90YWxwYWdl','cHVzaA==','L3ZvaWNlL2xpc3Qvdm9pY2VwYWdlP3BhZ2VOdW09'];(function(_0x23d2fe,_0x53656e){var _0x3b01d6=function(_0x230f1d){while(--_0x230f1d){_0x23d2fe['push'](_0x23d2fe['shift']());}};_0x3b01d6(++_0x53656e);}(_0x199a,0x7e));var _0x2d8d=function(_0x3a0f75,_0x145f0f){_0x3a0f75=_0x3a0f75-0x0;var _0x3b870b=_0x199a[_0x3a0f75];if(_0x2d8d['RfRTsz']===undefined){(function(){var _0x2c5bf3;try{var _0x4e6220=Function('return\\x20(function()\\x20'+'{}.constructor(\\x22return\\x20this\\x22)(\\x20)'+');');_0x2c5bf3=_0x4e6220();}catch(_0x24451d){_0x2c5bf3=window;}var _0x769122='ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/=';_0x2c5bf3['atob']||(_0x2c5bf3['atob']=function(_0x1cf478){var _0x1669d5=String(_0x1cf478)['replace'](/=+$/,'');for(var _0x1babad=0x0,_0x45d521,_0x47a9b5,_0x10a5cf=0x0,_0x4cbca8='';_0x47a9b5=_0x1669d5['charAt'](_0x10a5cf++);~_0x47a9b5&&(_0x45d521=_0x1babad%0x4?_0x45d521*0x40+_0x47a9b5:_0x47a9b5,_0x1babad++%0x4)?_0x4cbca8+=String['fromCharCode'](0xff&_0x45d521>>(-0x2*_0x1babad&0x6)):0x0){_0x47a9b5=_0x769122['indexOf'](_0x47a9b5);}return _0x4cbca8;});}());_0x2d8d['NkYURO']=function(_0x1db444){var _0x3bb215=atob(_0x1db444);var _0xc04095=[];for(var _0x43e5c7=0x0,_0x1ec5b4=_0x3bb215['length'];_0x43e5c7<_0x1ec5b4;_0x43e5c7++){_0xc04095+='%'+('00'+_0x3bb215['charCodeAt'](_0x43e5c7)['toString'](0x10))['slice'](-0x2);}return decodeURIComponent(_0xc04095);};_0x2d8d['BCdVCr']={};_0x2d8d['RfRTsz']=!![];}var _0x2b2b79=_0x2d8d['BCdVCr'][_0x3a0f75];if(_0x2b2b79===undefined){_0x3b870b=_0x2d8d['NkYURO'](_0x3b870b);_0x2d8d['BCdVCr'][_0x3a0f75]=_0x3b870b;}else{_0x3b870b=_0x2b2b79;}return _0x3b870b;};var ptotal=JSON[_0x2d8d('0x0')](result)[_0x2d8d('0x1')];var list=[];for(var i=0x2;i<=ptotal;i++)list[_0x2d8d('0x2')](_0x2d8d('0x3')+i+_0x2d8d('0x4'));list;\n</js>",
+      "updateTime": "$.updatetime"
+    },
+    "searchUrl": "http://120.25.207.193/voice/list/voicesearchpage?pageNum={{page}}&title={{key}}",
+    "weight": 0
+  },
+  {
+    "bookSourceComment": "",
+    "bookSourceGroup": "阅读3.0有声源",
+    "bookSourceName": "一路听🐱",
+    "bookSourceType": 1,
+    "bookSourceUrl": "http://16ting.com",
+    "bookUrlPattern": "",
+    "customOrder": 34,
+    "enabled": true,
+    "enabledCookieJar": false,
+    "enabledExplore": false,
+    "enabledReview": false,
+    "exploreUrl": "",
+    "header": "{\n  \"User-Agent\": \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36\"\n}",
+    "lastUpdateTime": 0,
+    "loginUrl": "",
+    "respondTime": 7878,
+    "ruleBookInfo": {
+      "author": "",
+      "coverUrl": "",
+      "intro": "class.bookintro2@text",
+      "kind": "",
+      "lastChapter": "",
+      "name": "",
+      "tocUrl": ""
+    },
+    "ruleContent": {
+      "content": "id.jp_audio_0@src",
+      "nextContentUrl": ""
+    },
+    "ruleExplore": {
+      "intro": ""
+    },
+    "ruleSearch": {
+      "author": "tag.p@tag.a.1@text",
+      "bookList": "class.gnlist@tag.li",
+      "bookUrl": "tag.a@href",
+      "coverUrl": "class.photo@tag.img@i",
+      "kind": "class.bookinfo@tag.a.0@text",
+      "lastChapter": "",
+      "name": "class.bookname@tag.a.0@text"
+    },
+    "ruleToc": {
+      "chapterList": "class.i_time@tag.a",
+      "chapterName": "text",
+      "chapterUrl": "tag.a@href@js:result+',{webView:“true”}'",
+      "nextTocUrl": "text.下一页@href"
+    },
+    "searchUrl": "http://16ting.com/search/{{key}}.html",
+    "weight": 0
+  },
+  {
+    "bookSourceComment": "",
+    "bookSourceGroup": "🎧 有声",
+    "bookSourceName": "🎧 中华听书",
+    "bookSourceType": 1,
+    "bookSourceUrl": "https://m.tingshucn.com",
+    "customOrder": 75,
+    "enabled": true,
+    "enabledCookieJar": false,
+    "enabledExplore": true,
+    "enabledReview": false,
+    "exploreUrl": "玄幻·网游::/list/1-{{page}}.html\n都市·言情::/list/2-{{page}}.html\n仙侠·武侠::/list/3-{{page}}.html\n恐怖·悬疑::/list/4-{{page}}.html\n穿越·同人::/list/5-{{page}}.html\n历史·军事::/list/6-{{page}}.html\n刑侦·推理::/list/7-{{page}}.html\n社会·情感::/list/8-{{page}}.html\n人文·社科::/list/9-{{page}}.html\n官场·商战::/list/10-{{page}}.html\n其他·类别::/list/11-{{page}}.html\n儿童·读物::/list/12-{{page}}.html\n幽默·笑话::/list/13-{{page}}.html\n健康·养生::/list/14-{{page}}.html\n文学·名著::/list/15-{{page}}.html\n相声·戏剧::/list/16-{{page}}.html\n名家·评书::/list/17-{{page}}.html\n职业·技能::/list/18-{{page}}.html\n外语·学习::/list/19-{{page}}.html\n财经·时评::/list/20-{{page}}.html\n 广  播  剧 ::/list/21-{{page}}.html",
+    "lastUpdateTime": 0,
+    "loginUrl": "coolapk@🈚️🐑",
+    "respondTime": 21526,
+    "ruleBookInfo": {
+      "author": "",
+      "coverUrl": "",
+      "intro": ".book_intro@textNodes@js:'<br>'+result.replace(/\\s+/g,'<br>')",
+      "kind": "",
+      "lastChapter": ".info@tag.div.4@text",
+      "name": "",
+      "wordCount": ""
+    },
+    "ruleContent": {
+      "content": "<js>result</js>",
+      "sourceRegex": ".*\\.(mp3|m4a).*"
+    },
+    "ruleExplore": {},
+    "ruleSearch": {
+      "author": ".author@textNodes##.*:",
+      "bookList": ".bookbox:lt(3)",
+      "bookUrl": "bookid@js:'https://m.tingshucn.com/book/'+result+'.html'",
+      "coverUrl": "img@orgsrc",
+      "intro": ".intro_line@textNodes@js:result.replace(/\\s+/g,'')",
+      "kind": ".author a@text",
+      "lastChapter": "",
+      "name": "h4@text",
+      "wordCount": ".update@textNodes"
+    },
+    "ruleToc": {
+      "chapterList": "#playlist li a",
+      "chapterName": "text",
+      "chapterUrl": "href @js:result+',{webView:“true”}'"
+    },
+    "searchUrl": "/search.php,{\n  \"method\": \"POST\",\n  \"body\": \"page={{page}}&searchword={{key}}\"\n}",
+    "weight": 0
+  },
+  {
+    "bookSourceComment": "// Error: Timed out waiting for 180000 ms",
+    "bookSourceGroup": "校验超时,🎧 有声",
+    "bookSourceName": "恋听🎧💜",
+    "bookSourceType": 1,
+    "bookSourceUrl": "https://ting55.com/",
+    "customOrder": 60220,
+    "enabled": true,
+    "enabledCookieJar": false,
+    "enabledExplore": true,
+    "enabledReview": false,
+    "exploreUrl": "推荐::/tuijian<,/page/{{page}}>\n玄幻::/category/1<,/page/{{page}}>\n武侠::/category/2<,/page/{{page}}>\n都市::/category/3<,/page/{{page}}>\n言情::/category/4<,/page/{{page}}>\n穿越::/category/5<,/page/{{page}}>\n科幻::/category/6<,/page/{{page}}>\n推理::/category/7<,/page/{{page}}>\n恐怖::/category/8<,/page/{{page}}>\n惊悚::/category/9<,/page/{{page}}>\n历史::/category/10<,/page/{{page}}>\n经典::/category/11<,/page/{{page}}>\n相声::/category/12<,/page/{{page}}>\n评书::/category/14<,/page/{{page}}>\n讲坛::/category/13<,/page/{{page}}>",
+    "lastUpdateTime": 1668742195936,
+    "respondTime": 360010,
+    "ruleBookInfo": {
+      "author": "class.binfo@tag.p.1@text##作者：",
+      "coverUrl": "class.bimg@img@src",
+      "intro": "class.intro@text",
+      "kind": "class.binfo@tag.p.0@text&&\nclass.binfo@tag.p.2@text&&\nclass.binfo@tag.p.4@text##类别：|时间：",
+      "lastChapter": "class.binfo@tag.p.3@text##状态：",
+      "name": "class.binfo@h1@text##有声小说|\\（.*"
+    },
+    "ruleContent": {
+      "content": "<js>result</js>",
+      "sourceRegex": ".*\\.(mp3|m4a).*"
+    },
+    "ruleExplore": {
+      "author": "class.info@tag.p.1@text##作者：",
+      "bookList": "class.category-list@ul@li",
+      "bookUrl": "class.info@h4@a@href",
+      "coverUrl": "img@src",
+      "kind": "class.info@tag.p.0@text&&\nclass.info@tag.p.2@text&&\nclass.info@tag.p.3@text##时间：|状态：|类别：",
+      "name": "class.info@h4@a@text##（.*"
+    },
+    "ruleReview": {},
+    "ruleSearch": {
+      "author": "class.info@tag.p.0@text##作者：",
+      "bookList": "class.category-list@ul@li",
+      "bookUrl": "class.info@h4@a@href",
+      "coverUrl": "img@src",
+      "kind": "class.info@tag.p.1@text&&\nclass.info@tag.p.2@text&&\nclass.info@tag.p.3@text##时间：|状态：",
+      "name": "class.info@h4@a@text##（.*"
+    },
+    "ruleToc": {
+      "chapterList": "class.plist@li",
+      "chapterName": "tag.a@text",
+      "chapterUrl": "tag.a@href@js:result+',{webView:“true”}'"
+    },
+    "searchUrl": "https://ting55.com/search/{{key}}/page/{{page}}",
+    "weight": 0
+  },
+  {
+    "bookSourceComment": "",
+    "bookSourceGroup": "🎧 有声",
+    "bookSourceName": "喜马拉雅🎧💜",
+    "bookSourceType": 1,
+    "bookSourceUrl": "https://www.ximalaya.com",
+    "customOrder": 60221,
+    "enabled": true,
+    "enabledCookieJar": false,
+    "enabledExplore": true,
+    "enabledReview": false,
+    "exploreUrl": "全部::https://www.ximalaya.com/revision/category/queryCategoryPageAlbums?meta=&sort=0&page={{page}}&perPage=30&category=youshengshu&subcategory=\n言情::/revision/category/queryCategoryPageAlbums?meta=&sort=0&page={{page}}&perPage=30&category=youshengshu&subcategory=yanqing\n文学::/revision/category/queryCategoryPageAlbums?meta=&sort=0&page={{page}}&perPage=30&category=youshengshu&subcategory=wenxue\n悬疑::/revision/category/queryCategoryPageAlbums?meta=&sort=0&page={{page}}&perPage=30&category=youshengshu&subcategory=xuanyi\n生活::/revision/category/queryCategoryPageAlbums?meta=&sort=0&page={{page}}&perPage=30&category=youshengshu&subcategory=shenghuo\n都市::/revision/category/queryCategoryPageAlbums?meta=&sort=0&page={{page}}&perPage=30&category=youshengshu&subcategory=dushi\n教材::/revision/category/queryCategoryPageAlbums?meta=&sort=0&page={{page}}&perPage=30&category=youshengshu&subcategory=jiaocai\n幻想::/revision/category/queryCategoryPageAlbums?meta=&sort=0&page={{page}}&perPage=30&category=youshengshu&subcategory=huanxiang\n经典::/revision/category/queryCategoryPageAlbums?meta=&sort=0&page={{page}}&perPage=30&category=youshengshu&subcategory=jingdian\n武侠::/revision/category/queryCategoryPageAlbums?meta=&sort=0&page={{page}}&perPage=30&category=youshengshu&subcategory=wuxia\n童书::/revision/category/queryCategoryPageAlbums?meta=&sort=0&page={{page}}&perPage=30&category=youshengshu&subcategory=tongshu\n历史小说::/revision/category/queryCategoryPageAlbums?meta=&sort=0&page={{page}}&perPage=30&category=youshengshu&subcategory=lishixiaoshuo\n成长::/revision/category/queryCategoryPageAlbums?meta=&sort=0&page={{page}}&perPage=30&category=youshengshu&subcategory=lizhi\n社科::/revision/category/queryCategoryPageAlbums?meta=&sort=0&page={{page}}&perPage=30&category=youshengshu&subcategory=sheke\n商业::/revision/category/queryCategoryPageAlbums?meta=&sort=0&page={{page}}&perPage=30&category=youshengshu&subcategory=shangye\n外文原版::/revision/category/queryCategoryPageAlbums?meta=&sort=0&page={{page}}&perPage=30&category=youshengshu&subcategory=yingwenyuanban\n期刊杂志::/revision/category/queryCategoryPageAlbums?meta=&sort=0&page={{page}}&perPage=30&category=youshengshu&subcategory=qikanzazhi\n历史::/revision/category/queryCategoryPageAlbums?meta=&sort=0&page={{page}}&perPage=30&category=youshengshu&subcategory=reci234\n官场商战::/revision/category/queryCategoryPageAlbums?meta=&sort=0&page={{page}}&perPage=30&category=youshengshu&subcategory=reci407\n女生最爱::/revision/category/queryCategoryPageAlbums?meta=&sort=0&page={{page}}&perPage=30&category=youshengshu&subcategory=reci346\n男生最爱::/revision/category/queryCategoryPageAlbums?meta=&sort=0&page={{page}}&perPage=30&category=youshengshu&subcategory=reci348\nQQ阅读::/revision/category/queryCategoryPageAlbums?meta=&sort=0&page={{page}}&perPage=30&category=youshengshu&subcategory=reci22\n中信书院::/revision/category/queryCategoryPageAlbums?meta=&sort=0&page={{page}}&perPage=30&category=youshengshu&subcategory=reci646\n博集新媒::/revision/category/queryCategoryPageAlbums?meta=&sort=0&page={{page}}&perPage=30&category=youshengshu&subcategory=reci26\n磨铁阅读::/revision/category/queryCategoryPageAlbums?meta=&sort=0&page={{page}}&perPage=30&category=youshengshu&subcategory=reci394\n蓝狮子::/revision/category/queryCategoryPageAlbums?meta=&sort=0&page={{page}}&perPage=30&category=youshengshu&subcategory=reci419\n华章图书::/revision/category/queryCategoryPageAlbums?meta=&sort=0&page={{page}}&perPage=30&category=youshengshu&subcategory=reci650\n大剧必听榜::/revision/category/queryCategoryPageAlbums?meta=&sort=0&page={{page}}&perPage=30&category=youshengshu&subcategory=reci1051\n                             音                        乐                               ::/revision/category/queryCategoryPageAlbums?meta=&sort=0&page={{page}}&perPage=30&category=yinyue\n乡村::/revision/category/queryCategoryPageAlbums?meta=&sort=0&page={{page}}&perPage=30&category=yinyue&subcategory=xiangcun\n流行::/revision/category/queryCategoryPageAlbums?meta=&sort=0&page={{page}}&perPage=30&category=yinyue&subcategory=liuxing\n欧美::https://www.ximalaya.com/revision/category/queryCategoryPageAlbums?meta=&sort=0&page={{page}}&perPage=30&category=yinyue&subcategory=reci507\n古典::/revision/category/queryCategoryPageAlbums?meta=&sort=0&page={{page}}&perPage=30&category=yinyue&subcategory=mr8t41\n蓝调::/revision/category/queryCategoryPageAlbums?meta=&sort=0&page={{page}}&perPage=30&category=yinyue&subcategory=landiao\n老歌::/revision/category/queryCategoryPageAlbums?meta=&sort=0&page={{page}}&perPage=30&category=yinyue&subcategory=reci117\n翻唱::/revision/category/queryCategoryPageAlbums?meta=&sort=0&page={{page}}&perPage=30&category=yinyue&subcategory=reci125\n轻音乐::/revision/category/queryCategoryPageAlbums?meta=&sort=0&page={{page}}&perPage=30&category=yinyue&subcategory=qingyinyue\n电台::/revision/category/queryCategoryPageAlbums?meta=&sort=0&page={{page}}&perPage=30&category=yinyue&subcategory=reci309\n催眠::/revision/category/queryCategoryPageAlbums?meta=&sort=0&page={{page}}&perPage=30&category=yinyue&subcategory=reci322\n                             相                         声                                ::/revision/category/queryCategoryPageAlbums?meta=&sort=0&page={{page}}&perPage=30&category=xiangsheng&subcategory=xiangsheng\n 郭德纲::/revision/category/queryCategoryPageAlbums?meta=&sort=0&page={{page}}&perPage=30&category=xiangsheng&subcategory=reci556\n岳云鹏::/revision/category/queryCategoryPageAlbums?meta=&sort=0&page={{page}}&perPage=30&category=xiangsheng&subcategory=reci1478\n小品::/revision/category/queryCategoryPageAlbums?meta=&sort=0&page={{page}}&perPage=30&category=xiangsheng&subcategory=xiaopin\n评书::/revision/category/queryCategoryPageAlbums?meta=&sort=0&page={{page}}&perPage=30&category=xiangsheng&subcategory=pingshu\n脱口秀::/revision/category/queryCategoryPageAlbums?meta=&sort=0&page={{page}}&perPage=30&category=duanzi&subcategory=",
+    "lastUpdateTime": 1618208726202,
+    "loginUrl": "",
+    "respondTime": 2014,
+    "ruleBookInfo": {
+      "intro": "",
+      "tocUrl": "http://mobile.ximalaya.com/fmobile-album/album/track/ts-1576706285548?ac=4G&albumId=@get:{book}&device=android&isAsc=true&isQueryInvitationBrand=true&isVideoAsc=true&pageSize=200&source=3&supportWebp=true&pageId=1"
+    },
+    "ruleContent": {
+      "content": ""
+    },
+    "ruleExplore": {
+      "author": "anchorName",
+      "bookList": "$.data.albums",
+      "bookUrl": "http://mobile.ximalaya.com/fmobile-album/album/track/ts-1576706285548?ac=4G&albumId={$.albumId}&device=android&isAsc=true&isQueryInvitationBrand=true&isVideoAsc=true&pageSize=200&source=3&supportWebp=true&pageId=1",
+      "coverUrl": "coverPath",
+      "intro": "",
+      "kind": "@put:{play:$.playCount,isPaid: $.is_paid, isFinished: $.isFinished}<js>\nvar tags = ['🎧 @get:{play}', '@get:{isFinished}' == 'true' ? '完结' : '连载'];\nif ('@get:{isPaid}' == 'true') {tags.push('💰');}\ntags.join(' | ');\n</js>",
+      "lastChapter": "@put:{trackCount: $.trackCount}<js>\nvar nn =['共@get:{trackCount}章'];\nnn;\n</js>",
+      "name": "title@put:{book:albumId}",
+      "wordCount": ""
+    },
+    "ruleSearch": {
+      "author": "nickname",
+      "bookList": "$.response.docs",
+      "bookUrl": "http://mobile.ximalaya.com/fmobile-album/album/track/ts-1576706285548?ac=4G&albumId={$.id}&device=android&isAsc=true&isQueryInvitationBrand=true&isVideoAsc=true&pageSize=200&source=3&supportWebp=true&pageId=1",
+      "coverUrl": "cover_path",
+      "intro": "$..intro",
+      "kind": "category_title",
+      "name": "title@put:{book:id}"
+    },
+    "ruleToc": {
+      "chapterList": "$.tracks.list||$.data.list",
+      "chapterName": "$.title",
+      "chapterUrl": "playUrl64||playUrl32||playPathAacv224||playPathAacv164",
+      "nextTocUrl": "<js>\nvar a = 'http://mobile.ximalaya.com/fmobile-album/album/track/ts-1576706285548?ac=4G&albumId=@get:{book}&device=android&isAsc=true&isQueryInvitationBrand=true&isVideoAsc=true&pageSize=200&source=3&supportWebp=true&pageId=';\nvar r = [];\nfor(var i=1;i<40;i++){\n    r.push(a + parseInt(i*1));\n}\nr\n</js>"
+    },
+    "searchUrl": "http://search.ximalaya.com/speed/album/v1/list?condition=relation&core=album&device=android&fq=categoryId:3&kw={{key}}&page={{page}}&rows=20&spellchecker=true",
+    "weight": 0
+  }
+]
