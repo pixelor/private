@@ -1,13 +1,12 @@
-[
-{
+[   
+    {
         "title":"小说",
         "url":"booksource/default.json"
     },
     {
         "title":"名著",
         "url":"booksource/cn.json"
-    }
-    ,{
+    },{
         "title":"漫画",
         "url":"booksource/mhy-lite.json"
     },{
