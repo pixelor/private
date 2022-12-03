@@ -5,7 +5,7 @@
     "url":"https://ghproxy.com/https://github.com/pixelor/reader/releases/download/1.3.3/v2read_app.apk",
     "updateTitle":"全网小说阅读器",
     "updateContent":"增加多个网络tts",
-    "force":0,
+    "force":1,
     "ad":0,
     "clear":0,
     "httpTTSVersion":6,
